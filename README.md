@@ -1,0 +1,335 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Piastri – F1 Career </title>
+    <style>
+       
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f4f7fb;
+            color: #102030;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: #0047b3;
+        }
+
+        .page-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                    "header"
+                    "hero"
+                    "article-feature"
+                    "ad"
+                    "article-listing"
+                    "sidebar"
+                    "footer";
+            grid-row-gap: 1rem;
+            grid-column-gap: 1rem;
+        }
+
+        .site-header {
+            grid-area: header;
+            background-color: #c9daf8;
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+        }
+
+        .header-inner {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 0.5rem;
+        }
+
+        .site-title {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .brand-tagline {
+            font-size: 0.9rem;
+            margin: 0.25rem 0 0;
+        }
+
+        .global-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .global-nav a {
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 999px;
+            background-color: #e7f1ff;
+        }
+
+        .tools {
+            text-align: left;
+        }
+
+        .card {
+            background-color: #e7f1ff;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+
+        .hero {
+            grid-area: hero;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row-gap: 1rem;
+        }
+
+        .hero-feature {
+            background-color: #e7f1ff;
+        }
+
+        .hero-cta {
+            background-color: #d9ead3;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            padding: 0.6rem 1.3rem;
+            border-radius: 999px;
+            border: none;
+            background-color: #ff7f27;
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-cta:hover,
+        .btn-cta:focus {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .feature-article {
+            grid-area: article-feature;
+        }
+
+        .article-listing {
+            grid-area: article-listing;
+        }
+
+        .article-listing ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        .article-listing li {
+            margin-bottom: 0.4rem;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .sidebar ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.35rem;
+        }
+
+        .ad-card {
+            grid-area: ad;
+            background-color: #9fc5f8;
+        }
+
+        .ad-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin: 0 0 0.5rem;
+        }
+
+        .ad-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .site-footer {
+            grid-area: footer;
+            background-color: #c9daf8;
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 576px) {
+            .page-grid {
+                grid-template-columns: 2fr 2fr 1.2fr;
+                grid-template-areas:
+                        "header header header"
+                        "hero hero hero"
+                        "article-feature article-feature ad"
+                        "article-listing article-listing article-listing"
+                        "sidebar sidebar sidebar"
+                        "footer footer footer";
+            }
+
+            .header-inner {
+                grid-template-columns: 2fr 3fr 2fr;
+                grid-column-gap: 0.75rem;
+                align-items: center;
+            }
+
+            .tools {
+                text-align: right;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .page-grid {
+                grid-template-columns: 2fr 2fr 1.2fr;
+                grid-template-areas:
+                        "header header header"
+                        "hero hero ad"
+                        "article-feature article-listing sidebar"
+                        "footer footer footer";
+            }
+
+            .hero {
+                grid-template-columns: 2fr 1.5fr;
+                grid-column-gap: 1rem;
+                grid-row-gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-grid">
+    <header class="site-header">
+        <div class="header-inner">
+  
+            <div class="brand">
+                <h1 class="site-title">Oscar Piastri: Driver Intro</h1>
+                <p class="brand-tagline">Following the rise of McLaren&apos;s young star.</p>
+            </div>
+
+            <nav class="global-nav" aria-label="Global navigation">
+                <ul>
+                    <li><a href="#biography">Biography</a></li>
+                    <li><a href="#career">Racing career</a></li>
+                    <li><a href="#facts">Quick facts</a></li>
+                </ul>
+            </nav>
+
+            <div class="tools">
+                <a href="https://www.formula1.com/en/latest"
+                 a class="btn-cta">Get race weekend recap</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+ 
+        <article class="hero-feature card">
+            <h2 id="hero-title">The journey through single-seaters</h2>
+            <p>
+                Oscar Piastri climbed the single-seater ladder at incredible speed, winning back-to-back
+                championships in Formula Renault Eurocup, FIA Formula 3 and FIA Formula 2. That run of titles
+                opened the door to Formula 1 with McLaren, where he made his race debut in 2023.
+            </p>
+            <p>
+                Calm on the radio and aggressive on track, Piastri has quickly built a reputation as one of
+                the sharpest young drivers on the grid.
+            </p>
+        </article>
+
+        <article class="hero-cta card">
+            <h3>Check out the latest news about Oscar Piastri!</h3>
+            <p>
+                You can read the latest news about Formula 1 to keep in touch with how Oscar Piastri&apos;s season is going!
+            </p>
+            <a href="https://www.formula1.com/en/latest"
+            a class="btn-cta">Read latest news</a>
+        </article>
+    </section>
+
+    <aside class="ad-card card" aria-label="Promotional message">
+        <p class="ad-label">Advertisement</p>
+        <a href="https://store.oscarpiastri.com/?srsltid=AfmBOoriS9J_k66U_gOkhKwlEgeoIQB0a184tYSBVagI381mixojEvRn">
+        <img src="https://store.oscarpiastri.com/cdn/shop/files/BF25-mobile.jpg?v=1763826119&width=3000">
+        </a>
+    </aside>
+
+    <section class="feature-article card" id="biography">
+        <h2>Key moments in Oscar Piastri&apos;s path to F1</h2>
+        <p>
+            Born in Melbourne in 2001, Piastri moved from karting in Australia to racing in Europe as a teenager.
+            He clinched the 2019 Formula Renault Eurocup title, then went on a stunning streak:
+            FIA Formula 3 champion in 2020 and FIA Formula 2 champion in 2021, both in his rookie seasons.
+        </p>
+        <p>
+            After a year as a reserve driver, Piastri joined McLaren for the 2023 Formula 1 season. His rookie campaign
+            included strong qualifying performances, memorable battles with team-mate Lando Norris and his first podium
+            finishes, marking him out as one of the most exciting prospects of the new generation.
+        </p>
+    </section>
+
+    <section class="article-listing card" id="career">
+        <h2>Career snapshots</h2>
+        <ul>
+            <li><strong>2020 – FIA Formula 3 champion:</strong> Consistent podiums and a dramatic final-round title win.</li>
+            <li><strong>2021 – FIA Formula 2 champion:</strong> Six wins and a dominant rookie season secured the crown.</li>
+            <li><strong>2022 – F1 reserve year:</strong> Simulator work and practice sessions prepared him for a race seat.</li>
+            <li><strong>2023 – McLaren Formula 1 debut:</strong> Breakthrough rookie year with strong points finishes and early podiums.</li>
+        </ul>
+    </section>
+
+    <aside class="sidebar card" id="facts">
+        <h2>Quick facts</h2>
+        <ul>
+            <li><strong>Full name:</strong> Oscar Jack Piastri</li>
+            <li><strong>Born:</strong> 6 April 2001, Melbourne, Australia</li>
+            <li><strong>Team:</strong> McLaren Formula 1 Team</li>
+            <li><strong>Car number:</strong> 81</li>
+            <li><strong>Junior titles:</strong> Formula Renault Eurocup, FIA F3, FIA F2</li>
+        </ul>
+    </aside>
+
+    <footer class="site-footer">
+        <p>Made by Anna Marija Volkova</p>
+        <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </footer>
+</div>
+</body>
+</html>
